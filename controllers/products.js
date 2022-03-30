@@ -3,6 +3,7 @@ const getAllProducts = async (req, res) => {
 }
 
 const getAllProductsStatic = async (req, res) => {
+   throw new Error('testing')
    res.status(404).json({msg: 'Static'})
 }
 
