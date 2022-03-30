@@ -6,7 +6,7 @@ const productSchema = new mongoose.Schema({
       required: [true, 'product name must be provided']
    },
    price: {
-      type: String,
+      type: Number,
       required: [true, 'product price must be provided']
    },
    featured: {
@@ -16,7 +16,7 @@ const productSchema = new mongoose.Schema({
    rating: {
       type: Number,
       default: 4.4  
-   },
+   }, 
    createdAt: {
       type: Date,
       default: Date.now(),
